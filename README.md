@@ -52,9 +52,15 @@ newman run collection.json -e env.json
 1. Jenkins is configured to run Newman collections.
 2. The build executes Newman using a Windows batch command.
 3. This enables automated API testing in a CI/CD pipeline.
-
+   
 **Example Jenkins Command:**
 newman run collection.json -e env.json
+
+**Jenkins CI Integration**
+The Postman collection is executed using Newman through Jenkins as part of Continuous Integration.
+
+### Jenkins Build Success
+![Jenkins Build](screenshots/jenkins_build_success.png)
 
 **✅ Validations Performed**
 1. Status code validation
